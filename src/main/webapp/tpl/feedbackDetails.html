@@ -1,0 +1,43 @@
+<a href=""><img width="20" src="images/home-icon.png" alt="Home" /></a>
+<a href="#scheduleMatrix"><img width="20" src="images/events-hover.png" alt="" /></a>
+<div class="tweets">
+		               <h3>Feedback For {{sessionName}}</h3>		              
+						<div class="tweets_list">
+				      		<ul>
+{{#each .}}
+						{{#if feedback }}
+						  		<li>{{description}}
+								<div class="week-month-year">
+									{{#each questionOptions}}
+									<p><a href="#feedBackResponse/{{../id}}/{{optionId}}" id="feedBackDet-{{../id}}-{{optionId}}">{{value}}</a></p>
+									{{/each}}
+		             			</div>
+								</li>
+						{{/if}}
+{{/each}}
+				    		</ul>
+				      </div>
+		          </div>
+<div class="tweets">
+		               <h3>Quiz For {{sessionName}}</h3>		              
+						<div class="tweets_list">
+				      		<ul>
+{{#each .}}
+						{{#if feedback }}
+						{{else}}
+							<li>{{description}}
+								<div class="week-month-year">
+									{{#each questionOptions}}
+									<p><a href="#feedBackResponse/{{../id}}/{{optionId}}" id="feedBackDet-{{../id}}-{{optionId}}">{{value}}</a></p>
+									{{/each}}
+		             			</div>
+								</li>
+						{{/if}}
+{{/each}}
+
+				    		</ul>
+				      </div>
+		          </div>
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

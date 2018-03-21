@@ -1,0 +1,272 @@
+var jsonData = {
+  "data": {
+    "presentations": [
+      {
+        "description": "HTML 5 framework",
+        "id": "1",
+        "imageURL": "images/presentations/AngularJS-framework.png",
+        "title": "Angular JS",
+	"location": "TR01",
+	"presenterFirstName" :"Dhananjay",
+	"startTime" : "11:00 AM"
+      },
+      {
+        "description": "Machine Learning Framework",
+        "id": "2",
+        "imageURL": "images/presentations/mantle-mahout.png",
+        "title": "Apache Mahout",
+	"location": "TR02",
+	"presenterFirstName" :"Sujit",
+	"startTime" : "11:00 AM"
+      },
+      {
+        "description": "NFC",
+        "id": "3",
+        "imageURL": "images/presentations/nfc-graphic.jpg",
+        "title": "NFC",
+	"location": "TR03",
+	"presenterFirstName" :"Abhijit",
+	"startTime" : "11:00 AM"
+      },
+      {
+        "description": "Chef",
+        "id": "4",
+        "imageURL": "images/presentations/OC_Chef_Logo.png",
+        "title": "Chef",
+	"location": "TR01",
+	"presenterFirstName" :"Felix",
+	"startTime" : "12:00 PM"
+      }
+    ],
+    "speakers": [
+      {
+        "fullName": "Dhananjay Ghanwat",
+        "id": "1",
+        "imageURL": "http://ieee-sb.ca/sites/default/files/default_user.jpg",
+        "description": "Very Cool Speaker",
+	"location": "TR01",
+	"presentationTitle" :"Big Data",
+	"startTime" : "11:00 AM"
+      },
+      {
+        "fullName": "Sujit Jagdale",
+        "id": "2",
+        "imageURL": "http://ieee-sb.ca/sites/default/files/default_user.jpg",
+        "description": "Very Cool Speaker",
+	"location": "TR02",
+	"presentationTitle" :"Angular JS",
+	"startTime" : "11:00 AM"
+      }
+    ],
+    "schedule": {
+       "tr1":[{
+          "id" : "1",
+	  "title": "Big Data",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "11:00",
+	  "startAmPm": "am",
+	  "endTime" : "11:40",
+	  "endAmPm" : "am"
+       },
+       {
+	  "id" : "2",
+	  "title": "Topic 2",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "12:00",
+	  "startAmPm": "pm",
+	  "endTime" : "12:40",
+	  "endAmPm" : "pm"
+       }
+       ,{
+	  "id" : "3",
+	  "title": "Topic 3",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "01:00",
+	  "startAmPm": "pm",
+	  "endTime" : "01:40",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "4",
+	  "title": "Topic 4",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "02:40",
+	  "startAmPm": "pm",
+	  "endTime" : "03:20",
+	  "endAmPm" : "pm"
+       },
+       {
+	  "id" : "5",
+	  "title": "Topic 5",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "03:30",
+	  "startAmPm": "pm",
+	  "endTime" : "04:20",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "6",
+	  "title": "Topic 6",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "04:40",
+	  "startAmPm": "pm",
+	  "endTime" : "05:20",
+	  "endAmPm" : "pm"
+       }],
+       "tr2":[{
+          "id" : "7",
+	  "title": "Topic 7",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "11:00",
+	  "startAmPm": "am",
+	  "endTime" : "11:40",
+	  "endAmPm" : "am"
+       },
+       {
+	  "id" : "8",
+	  "title": "Topic 8",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "12:00",
+	  "startAmPm": "pm",
+	  "endTime" : "12:40",
+	  "endAmPm" : "pm"
+       }
+       ,{
+	  "id" : "9",
+	  "title": "Topic 9",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "01:00",
+	  "startAmPm": "pm",
+	  "endTime" : "01:40",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "10",
+	  "title": "Topic 10",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "02:40",
+	  "startAmPm": "pm",
+	  "endTime" : "03:20",
+	  "endAmPm" : "pm"
+       },
+       {
+	  "id" : "11",
+	  "title": "Topic 11",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "03:30",
+	  "startAmPm": "pm",
+	  "endTime" : "04:20",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "12",
+	  "title": "Topic 12",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "04:40",
+	  "startAmPm": "pm",
+	  "endTime" : "05:20",
+	  "endAmPm" : "pm"
+       }],
+        "tr3":[{
+          "id" : "13",
+	  "title": "Topic 13",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "11:00",
+	  "startAmPm": "am",
+	  "endTime" : "11:40",
+	  "endAmPm" : "am"
+       },
+       {
+	  "id" : "14",
+	  "title": "Topic 14",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "12:00",
+	  "startAmPm": "pm",
+	  "endTime" : "12:40",
+	  "endAmPm" : "pm"
+       }
+       ,{
+	  "id" : "15",
+	  "title": "Topic 15",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "01:00",
+	  "startAmPm": "pm",
+	  "endTime" : "01:40",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "16",
+	  "title": "Topic 16",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "02:40",
+	  "startAmPm": "pm",
+	  "endTime" : "03:20",
+	  "endAmPm" : "pm"
+       },
+       {
+	  "id" : "17",
+	  "title": "Topic 17",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "03:30",
+	  "startAmPm": "pm",
+	  "endTime" : "04:20",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "18",
+	  "title": "Topic 18",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "04:40",
+	  "startAmPm": "pm",
+	  "endTime" : "05:20",
+	  "endAmPm" : "pm"
+       }],
+        "tr4":[{
+          "id" : "19",
+	  "title": "Topic 19",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "11:00",
+	  "startAmPm": "am",
+	  "endTime" : "11:40",
+	  "endAmPm" : "am"
+       },
+       {
+	  "id" : "20",
+	  "title": "Topic 20",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "12:00",
+	  "startAmPm": "pm",
+	  "endTime" : "12:40",
+	  "endAmPm" : "pm"
+       }
+       ,{
+	  "id" : "21",
+	  "title": "Topic 21",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "01:00",
+	  "startAmPm": "pm",
+	  "endTime" : "01:40",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "22",
+	  "title": "Topic 22",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "02:40",
+	  "startAmPm": "pm",
+	  "endTime" : "03:20",
+	  "endAmPm" : "pm"
+       },
+       {
+	  "id" : "23",
+	  "title": "Topic 23",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "03:30",
+	  "startAmPm": "pm",
+	  "endTime" : "04:20",
+	  "endAmPm" : "pm"
+       },{
+	  "id" : "24",
+	  "title": "Topic 24",
+	  "shortDesc": "Big Data is...",
+	  "startTime" : "04:40",
+	  "startAmPm": "pm",
+	  "endTime" : "05:20",
+	  "endAmPm" : "pm"
+       }]
+    }
+  }
+}

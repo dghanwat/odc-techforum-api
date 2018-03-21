@@ -1,0 +1,53 @@
+<a href=""><img width="20" src="images/home-icon.png" alt="" /></a>
+<div class="tweets">
+		               <h3><i><img src="images/events-hover.png" alt="" />Itinerary </i></h3>		              
+</div>
+<div class="profile_details">
+	   <div id="loginBox">
+            <div class="temp_list">
+            	<ul>
+            		<!-- <li><a class="register"><span id="registerText">Register</span></a></li>
+            		<li><a  class="details" ><span>Details</span></a></li> -->
+            		<li><a  class="feedback"><span>Feedback</span></a></li>
+            		<li><a  class="bestTeaser"><span>Vote As Best Teaser</span></a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+     	
+     <div class="clear"></div>		  	
+</div>	
+ <div class="clear"></div>		
+<div class="chart_list">
+    <ul>
+        <li><a href="#schedule/TR01" class="yellow" >TR01</a></li>
+		<li><a href="#schedule/TR02" class="yellow" >TR02</a></li>
+        <li><a href="#schedule/TR03" class="yellow" >TR03</a></li>
+        <li><a href="#schedule/TR04" class="yellow" >TR04</a></li>
+        <div class="clear"></div>
+    </ul>
+    {{#each .}}
+    {{#if_mod @index 4  }}
+    	{{#if_eq @index 0}}
+    		<ul class="thin-yellow facebook"><label class="facebook"><em>{{timeSlot}}</em></label></ul>
+    	{{else}}
+    		<div class="clear"></div></ul><ul class="thin-yellow"><label class="facebook"><em>{{timeSlot}}</em></label></ul><ul>
+    	{{/if_eq}}
+    {{/if_mod}}
+    {{#if_eq @index 0  }}
+    	<ul>
+    {{/if_eq}}
+	<li sessiondataid="{{id}}" {{#if register }} sessiondataregister="true" {{else }} sessiondataregister="false" {{/if}} sessiondataslot="{{timeSlot}}"><a href="#presentations/{{id}}" {{#if register }} class="red" {{else }} class="thin-yellow" {{/if}}> <i>{{name}}</a><img src="images/likes.png" alt="" id="teaser-vote-{{id}}"/></i></li>
+       
+    
+    
+
+    {{/each}}
+    <div class="clear"></div></ul>
+
+</div>
+
+
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

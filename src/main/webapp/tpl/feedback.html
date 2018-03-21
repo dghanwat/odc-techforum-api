@@ -1,0 +1,29 @@
+<a href=""><img width="20" src="images/home-icon.png" alt="" /></a>  
+<a href="#scheduleMatrix"><img width="20" src="images/events-hover.png" alt="" /></a>
+<div class="week-month-year">
+		             		 	<p><a href="#feedback/SLOT1" id="SLOT1">11:10 AM</a></p>
+								<p><a href="#feedback/SLOT2" id="SLOT2" >12:10 PM</a></p>
+								<p><a href="#feedback/SLOT3" id="SLOT3" >1:50 PM</a></p>
+								<p><a href="#feedback/SLOT4" id="SLOT4" >2:50 PM</a></p>
+								<p><a href="#feedback/SLOT5" id="SLOT5">4:00 PM</a></p>
+								<p><a href="#feedback/SLOT6" id="SLOT6" >5:00 PM</a></p>
+		             		 	<div class="clear"></div>
+		             		 </div>
+<div class="tweets">
+		               <h3><i><img src="images/events-hover.png" alt="" />{{slot}}</i> </h3>		         
+</div>
+<div class="temp_list"> 
+				      			<ul>
+								   {{#each .}}
+						  		    <li><a href="#feedbackDetails/{{id}}/{{../slot}}"><span class="day_name">{{roomNumber}}</span> 
+						  			<label class="day_name">{{name}}
+									{{#each presenterDtos}}
+									&nbsp;&nbsp;<em>By {{name}}</em>
+									{{/each}}
+									</label><div class="clear"></div></a></li>
+									{{/each}}
+				    		</ul>
+				      </div>
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

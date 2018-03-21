@@ -1,0 +1,22 @@
+ <a href=""><img width="20" src="images/home-icon.png" alt="" /></a>
+  	
+
+<div class="temp_list">
+				      			<ul>
+								   {{#each .}}
+						  		    <li><a href=""><span class="day_name">{{name}}</span> 
+						  			<label class="day_name">
+									{{#each sessionDtos}}
+									&nbsp;{{name}}
+									{{/each}}
+									<img onclick="javascript:register({{id}},'register'); return false;" src="images/likes.png" alt="Vote" title="Vote"/>
+									</label><div class="clear"></div>
+									
+									</a>
+									</li>
+									{{/each}}
+				    		</ul>
+				      </div>
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

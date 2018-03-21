@@ -1,0 +1,34 @@
+ <a href=""><img width="20" src="images/home-icon.png" alt="" /></a>
+  	
+
+
+<div class="week-month-year">
+		             		 	<p><a href="#schedule/TR01" id="TR01" >TR01</a></p>
+		             		 	<p><a href="#schedule/TR02" id="TR02" >TR02</a></p>
+		             		 	<p><a href="#schedule/TR03" id="TR03" >TR03</a></p>
+								<p><a href="#schedule/TR04" id="TR04" >TR04</a></p>
+		             		 	<div class="clear"></div>
+		             		 </div>
+
+<div class="tweets">
+		               <h3><i><img src="images/location.png" alt="" /> </i> {{room}}</h3>		              
+</div>
+<div class="temp_list">
+				      			<ul>
+								   {{#each .}} <!--href="#feedbackDetails/{{id}}/{{timeSlot}}" -->
+						  		    <li><a href="#feedbackDetails/{{id}}/{{timeSlot}}" ><span class="day_name">{{timeSlot}}</span> 
+						  			<label class="day_name">{{name}}
+									{{#each presenterDtos}}
+									&nbsp;&nbsp;<em>By {{name}}</em>
+									{{/each}}
+									<img onclick="javascript:register({{id}},'register'); return false;" src="images/follow_user.png" alt="Quick Register" title="Quick Register"/>
+									</label><div class="clear"></div>
+									
+									</a>
+									</li>
+									{{/each}}
+				    		</ul>
+				      </div>
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

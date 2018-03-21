@@ -1,0 +1,21 @@
+<a href=""><img width="20" src="images/home-icon.png" alt="" /></a>
+<a href="#scheduleMatrix"><img width="20" src="images/events-hover.png" alt="" /></a>
+  	
+<div class="tweets">
+		               <h3><i><img src="images/location.png" alt="" /> </i>My Sessions</h3>		              
+</div>
+<div class="temp_list">
+				      			<ul>
+								   {{#each sessionDto}}
+						  		    <li><a href="#presentations/{{id}}"><span class="day_name">{{timeSlot}} &nbsp;&nbsp; {{roomNumber}}</span> 
+						  			<label class="day_name">{{name}}
+									{{#each presenterDtos}}
+									&nbsp;&nbsp;<em>By {{name}}</em>
+									{{/each}}
+									</label><div class="clear"></div></a></li>
+									{{/each}}
+				    		</ul>
+				      </div>
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

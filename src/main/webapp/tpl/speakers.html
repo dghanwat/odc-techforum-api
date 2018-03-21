@@ -1,0 +1,32 @@
+<a href=""><img width="20" src="images/home-icon.png" alt="" /></a>
+<a href="#scheduleMatrix"><img width="20" src="images/events-hover.png" alt="" /></a>
+<div class="column_middle">
+    <a href="#speakers" id="slide_prev" class="previous-speaker"><img src="images/arrow-left.png" alt="Previous" /></a>
+    <a href="#speakers" class="profile_img next-speaker" id="slide_next" >
+	<img src="images/arrow-right.png" alt="Next" /></a>
+
+{{#each .}}
+<div class="column_middle_grid1" id="speaker-{{id}}">
+        <div class="profile_picture">
+    <a href=""><img src="{{imageUrl}}" alt="" />	</a>	
+    <div class="profile_picture_name">
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+    </div>
+    </div>
+	{{#each sessionDtos}}
+    <div class="social_network_likes">
+        <ul>
+            <li><a class="facebook" href="#schedule/{{roomNumber}}"><i><img src="images/location.png" alt=""></i> <span>{{roomNumber}}</span></a></li>
+            <li><a href="#presentations/{{id}}" class="twitter"><i><img src="images/views.png" alt=""></i> <span>{{name}}</span></a></li>
+            <li><a class="googleplus"><i><img src="images/events.png" alt=""></i> <span>{{timeSlot}}</span></a></li>
+            <!-- <li><a href="#registerUser/{{id}}" class="mail"><i><img src="images/follow_user.png" alt=""></i> <span>Register</span></a></li> -->
+            <div class="clear"></div>
+        </ul>
+    </div>
+	{{/each}}
+</div>
+{{/each}}
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>

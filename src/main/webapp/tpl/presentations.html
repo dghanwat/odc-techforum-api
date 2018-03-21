@@ -1,0 +1,40 @@
+<a href=""><img width="20" src="images/home-icon.png" alt="" /></a>
+<a href="#scheduleMatrix"><img width="20" src="images/events-hover.png" alt="" /></a>
+<a href="#mysessions"><img width="20" src="images/user.png" alt="" /></a>
+<div class="column_middle">
+    <a href="#presentations" id="slide_prev" class="previous-presentation"><img src="images/arrow-left.png" alt="Previous" /></a>
+    <a href="#presentations" class="profile_img next-presentation" id="slide_next" >
+	<img src="images/arrow-right.png" alt="Next" /></a>
+
+{{#each .}}
+<div class="column_middle_grid1" id="presentation-{{id}}">
+        <div class="profile_picture">
+    <a href=""><img src="{{imageUrl}}" alt="" />	</a>	
+    <div class="profile_picture_name">
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+    </div>
+    </div>
+    <div class="social_network_likes">
+        <ul>
+            <li><a class="facebook" href="#schedule/{{roomNumber}}"><i><img src="images/location.png" alt=""></i> <span>{{roomNumber}}</span></a></li>
+			{{#each presenterDtos}}
+            <li><a href="#speakers/{{id}}" class="twitter"><i><img src="images/user.png" alt=""></i> <span><em>{{name}}<em></span></a></li>
+			{{/each}}
+            <li><a class="googleplus" href="#feedback/{{timeSlot}}"><i><img src="images/events.png" alt=""></i> <span>{{timeSlot}}</span></a></li>
+			{{#if register }}
+            <li><a id="registerlink-{{id}}" class="mail" href="#registerUser/{{id}}/{{timeSlot}}/unregister" ><i><img src="images/follow_user.png" alt=""></i> <span id="{{id}}">Unregister</span></a></li>
+			{{else }}
+			<li><a id="registerlink-{{id}}" href="#registerUser/{{id}}/{{timeSlot}}/register" class="mail"><i><img src="images/follow_user.png" alt=""></i> <span id="{{id}}" >Register</span></a></li>
+			{{/if}}
+            <div class="clear"></div>
+        </ul>
+    </div>
+	</br>
+</div>
+{{/each}}
+
+
+<div class="copy-right">
+    <p>&copy; Worldline. All Rights Reserved</p>
+</div>
